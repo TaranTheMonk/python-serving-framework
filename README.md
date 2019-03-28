@@ -1,6 +1,16 @@
-## python-serving-framework
+## python-serving-kit
+A framework to serve machine learning services, it works as a submodule to support functions 
+which can handle web service and data ingestion.
+
+## Functions
 ```
-framework to serve machine learning services.
+wip
 ```
-v
-34
+
+## How to
+### initialize
+1. Add this repo as a submodule to your project / sub project, you may want to put it in the root directory.
+2. Rename ```Makefile.template``` to ```Makefile```, and put it (or maybe patch to an exist one) into the parent directory of this submodule.
+
+### update
+Execute ```make framework-update``` in where you put the ```Makefile```.
