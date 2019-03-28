@@ -1,11 +1,11 @@
-framework-init:
+serving-kit-init:
 	## initialize framework with latest commit
-	git submodule init framework
-	git submodule update --remote framework
+	git submodule init serving_kit
+	git submodule update --remote serving_kit
 
-framework-update:
+serving-kit-update:
 	## update framework with latest commit
-	git submodule update --remote framework
+	git submodule update --remote serving_kit
 
 create-env:
 	virtualenv -p `which python3` env
@@ -16,5 +16,5 @@ activate-env:
 
 install-dependencies:
 	## install dependencies of the framework and the project
-	pip install -r ./framework/requirements.txt
+	pip install -r ./serving_kit/requirements.txt
 	pip install -r requirements.txt

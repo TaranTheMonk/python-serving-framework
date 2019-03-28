@@ -13,4 +13,4 @@ wip
 2. Rename ```Makefile.template``` to ```Makefile```, and put it (or maybe patch to an exist one) into the parent directory of this submodule.
 
 ### update
-Execute ```make framework-update``` in where you put the ```Makefile```.
+Execute ```make serving-kit-update``` in where you put the ```Makefile```.
