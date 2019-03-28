@@ -1,0 +1,20 @@
+framework-init:
+	## initialize framework with latest commit
+	git submodule init framework
+	git submodule update --remote framework
+
+framework-update:
+	## update framework with latest commit
+	git submodule update --remote framework
+
+create-env:
+	virtualenv -p `which python3` env
+
+activate-env:
+	## basically you should manually execute the command below
+	source ./env/bin/activate
+
+install-dependencies:
+	## install dependencies of the framework and the project
+	pip install -r ./framework/requirements.txt
+	pip install -r requirements.txt
