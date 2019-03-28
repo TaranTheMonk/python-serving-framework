@@ -1,10 +1,10 @@
 serving-kit-init:
-	## initialize framework with latest commit
+	## initialize serving_kit with latest commit
 	git submodule init serving_kit
 	git submodule update --remote serving_kit
 
 serving-kit-update:
-	## update framework with latest commit
+	## update serving_kit with latest commit
 	git submodule update --remote serving_kit
 
 create-env:
@@ -15,6 +15,6 @@ activate-env:
 	source ./env/bin/activate
 
 install-dependencies:
-	## install dependencies of the framework and the project
+	## install dependencies of the serving_kit and the project
 	pip install -r ./serving_kit/requirements.txt
 	pip install -r requirements.txt
