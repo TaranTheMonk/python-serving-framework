@@ -9,7 +9,7 @@ wip
 
 ## How to
 ### initialize
-1. Add this repo as a submodule to your project / sub project, you may want to put it in the root directory.
+1. Add this repo as a submodule to your project / sub project, you may want to put it in the `root` directory and name it as ``serving_kit``.
 2. Rename ```Makefile.template``` to ```Makefile```, and put it (or maybe patch to an exist one) into the parent directory of this submodule.
 
 ### update
